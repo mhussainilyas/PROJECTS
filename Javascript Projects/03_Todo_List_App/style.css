@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2b2b2b;
+  font-family: "Lilita One", sans-serif;
+  text-transform: uppercase;
+  font: bold;
+}
+
+.main-wrapper {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 60rem;
+  margin-inline: auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.todo-header {
+  padding: 5rem 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+
+.main-heading {
+  font-size: 3.8rem;
+}
+
+.todo-input {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.td-input-field {
+  flex-grow: 1;
+  padding: 1.3rem 1.8rem;
+  border: none;
+  outline: none;
+  background-color: #2b2b2b;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 10rem 0 0 10rem;
+}
+
+button {
+  text-transform: capitalize;
+  padding: 1.3rem 2rem;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.td-add-btn {
+  border-radius: 0 10rem 10rem 0;
+  background-color: orange;
+  color: white;
+}
+
+.td-add-btn:active {
+  color: black;
+}
+
+.todo-body {
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 4rem;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #eee;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 1.5rem;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.todo-item p {
+  font-size: 1.8rem;
+  color: #2b2b2b;
+}
+
+.todo-item i {
+  font-size: 2rem;
+  color: orange;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.todo-item i:hover {
+  color: #2b2b2b;
+}
+
+.empty-todo {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+  .main-heading {
+    font-size: 3.4rem;
+  }
+
+  .todo-header {
+    padding: 4rem 2rem;
+  }
+}
