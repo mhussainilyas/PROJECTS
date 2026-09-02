@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: emerald;
+}
+
+#header-navlinks a.active {
+  color: rgb(242, 56, 56);
+}
